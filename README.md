@@ -4,6 +4,12 @@
   <img src="https://github.com/byaliego/42-project-badges/blob/main/badges/so_longm.png" alt="Badge du projet so_long">
 </div>
 
+##
+<div align="center">
+  <img src="https://github.com/Omisev/so_long/blob/main/screenshot.png" alt="sreenshot">
+</div>
+
+
 ## Description
 Ce projet consiste à créer un jeu simple en utilisant la bibliothèque MinilibX. Le joueur doit récupérer tous les objets et atteindre la sortie.
 
