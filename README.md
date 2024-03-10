@@ -30,17 +30,22 @@ Ce projet consiste à créer un jeu simple en utilisant la bibliothèque Minilib
 ## Installation et Compilation
 ```
 git clone git@github.com:Omisev/so_long.git
-cd [Nom du répertoire]
-make
+cd so_long
 ```
 
 ## Utilisation
 ```
-./so_long [Nom_de_la_carte]
+make
+./so_long maps/mandatory/map1.ber
 ```
 
 ## Options
-Aucune option disponible pour ce projet.
+```
+make bonus
+./so_long_bonus maps/bonus/map1.ber
+```
+
+
 
 ## Caractéristiques
 - Utilisation de la bibliothèque graphique MinilibX
