@@ -6,11 +6,6 @@
 
 ##
 <div align="center">
-  <img src="https://github.com/Omisev/so_long/blob/main/so_long_representation.webp" alt="representation">
-</div>
-
-##
-<div align="center">
   <img src="https://github.com/Omisev/so_long/blob/main/screenshot.png" alt="sreenshot">
 </div>
 
