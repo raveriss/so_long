@@ -34,7 +34,7 @@ Ce projet consiste à créer un jeu simple en utilisant la bibliothèque Minilib
 
 ## Installation et Compilation
 ```
-git clone git@github.com:Omisev/so_long.git
+git clone git@github.com:raveriss/so_long.git
 cd so_long
 ```
 
