@@ -27,23 +27,23 @@
 
 ## Description
 
-Le projet **`so_long`** consiste à créer un petit jeu en vue `2D`, reposant sur la **MiniLibX**. L’objectif est d’afficher une carte, représentée par un fichier `.ber`, dans laquelle un personnage peut se déplacer afin de collecter des objets et atteindre une sortie. Le jeu propose une mécanique simple de déplacement, la prise en compte de collisions, ainsi qu’un système d’interactions élémentaires (collecte, détection de victoire, gestion d’ennemis optionnels, etc.).
+Le projet **`so_long`** consiste à créer un petit jeu en vue **`2D`**, reposant sur la **MiniLibX**. L’objectif est d’afficher une carte, représentée par un fichier **`.ber`**, dans laquelle un personnage peut se déplacer afin de collecter des objets et atteindre une sortie. Le jeu propose une mécanique simple de déplacement, la prise en compte de collisions, ainsi qu’un système d’interactions élémentaires (collecte, détection de victoire, gestion d’ennemis optionnels, etc.).
 
-Le but est d’apprendre à manipuler la **MiniLibX**, à gérer des textures, la lecture et validation de fichiers de configuration, et à mettre en œuvre une logique de jeu simple, tout en respectant les normes et contraintes de l’École `42`.
+Le but est d’apprendre à manipuler la **MiniLibX**, à gérer des textures, la lecture et validation de fichiers de configuration, et à mettre en œuvre une logique de jeu simple, tout en respectant les normes et contraintes de l' **`École 42`**.
 
 ## Objectifs
 
-- Afficher une grille de jeu en `2D` à partir d’une carte `.ber`.
+- Afficher une grille de jeu en **`2D`** à partir d’une carte **`.ber`**.
 - Gérer le déplacement du joueur dans un environnement fermé.
 - Collecter tous les objets (collectibles) avant d’atteindre la sortie.
 - Assurer une validation robuste du contenu de la carte (bords, format, nombre de collectibles, position du joueur et de la sortie).
-- Respecter les règles imposées par **`MinilibX`** et l’écosystème `42`.
+- Respecter les règles imposées par **`MinilibX`** et l’écosystème **`42`**.
 - Optionnel (bonus) : Ajouter des ennemis, un compteur de mouvements à l’écran, des animations, ou d’autres fonctionnalités avancées.
 
 ## Fonctionnalités
 
 - **Moteur 2D basique** : Affiche chaque case de la carte avec la texture correspondante (murs, sol, collectibles, sortie, joueur).
-- **Validation des cartes** : Vérification stricte des fichiers `.ber` (format, présence des éléments obligatoires, validation par flood-fill, etc.).
+- **Validation des cartes** : Vérification stricte des fichiers **`.ber`** (format, présence des éléments obligatoires, validation par flood-fill, etc.).
 - **Collecte d’objets & condition de victoire** : Le joueur doit récupérer tous les objets avant de pouvoir sortir.
 - **Mouvements du joueur** : Contrôle du déplacement via le clavier, gestion des collisions, et affichage du compteur de mouvements.
 - **Version bonus** : Support d’ennemis, animations supplémentaires, effets visuels, comptage du temps ou affichage sur la fenêtre, etc.
@@ -117,7 +117,7 @@ Le but est d’apprendre à manipuler la **MiniLibX**, à gérer des textures, l
     ├── player_*.xpm
     └── wall_texture.xpm
 ```
--  (Note : Le symbole `*` indique de multiples variantes de fichiers similaires.)
+-  (Note : Le symbole **`*`** indique de multiples variantes de fichiers similaires.)
 
 ## Installation
 ```
@@ -139,7 +139,7 @@ make bonus  # Compile la version bonus du projet
 ## Lancement du Jeu
 
 Argument :
-`<path_to_map.ber>` : Chemin vers une carte valide au format `.ber`.
+**`<path_to_map.ber>`** : Chemin vers une carte valide au format **`.ber`**.
 
 ## Mandatory
 
@@ -155,7 +155,7 @@ Argument :
 
 ## Bonus
 ```
-./so_long_bonus `<path_to_map.ber>`
+./so_long_bonus <path_to_map.ber>
 ```
 
   Exemple :
@@ -169,20 +169,20 @@ Argument :
 </div>
 
 ## Tester le Projet
-- Cartes valides : Testez avec les cartes du dossier `maps/mandatory/` pour vérifier le bon fonctionnement.
+- Cartes valides : Testez avec les cartes du dossier **`maps/mandatory/`** pour vérifier le bon fonctionnement.
 - Cartes invalides : Créez des cartes invalides ou modifiez les exemples pour tester la robustesse de la validation (trous dans la carte, pas de collectibles, pas de sortie, fichier corrompu, etc.).
 
 ## Contrôles
 
 | Key / Input    | Action                       |
 |----------------|------------------------------|
-|   `W` / `Z`	 | Déplacer vers le haut        |
-|   `A` / `Q`	 | Déplacer vers la gauche      |
-|      `S`	 | Déplacer vers le bas         |
-|      `D`	 | Déplacer vers la droite      |
-| `ESC` / `Croix`| Quitter le jeu               |
+|   **`W`** / **`Z`**	 | Déplacer vers le haut        |
+|   **`A`** / **`Q`**	 | Déplacer vers la gauche      |
+|      **`S`**	 | Déplacer vers le bas         |
+|      **`D`**	 | Déplacer vers la droite      |
+| **`ESC`** / **`Croix`**| Quitter le jeu               |
 
-(Adapter les touches suivant le clavier `AZERTY`/`QWERTY` si besoin.)
+(Adapter les touches suivant le clavier **`AZERTY`**/**`QWERTY`** si besoin.)
 
 ## Débogage et Diagnostic
 Vérifiez l'absence de fuites de mémoire et autres erreurs :
@@ -192,13 +192,13 @@ valgrind ./so_long <path_to_map.ber>
 ```
 
 ## Gestion des Erreurs et Validation
-- **Fichiers .ber invalides** : Testez les scénarios où le fichier n’existe pas, est corrompu ou ne se termine pas par `.ber`.
-- **Validation de la carte** : Vérifiez les erreurs liées au placement du `joueur`, des `murs`, des `collectibles`, et de la `sortie`.
-- **Manque d’éléments essentiels** : Assurez-vous que le programme signale l’absence du `joueur`, de la `sortie` ou des `collectibles`.
+- **Fichiers .ber invalides** : Testez les scénarios où le fichier n’existe pas, est corrompu ou ne se termine pas par **`.ber`**.
+- **Validation de la carte** : Vérifiez les erreurs liées au placement du **`joueur`**, des **`murs`**, des **`collectibles`**, et de la **`sortie`**.
+- **Manque d’éléments essentiels** : Assurez-vous que le programme signale l’absence du **`joueur`**, de la **`sortie`** ou des **`collectibles`**.
 
 ## Fonctionnalités Bonus
 - Ajout d’ennemis mobiles ou statiques.
-- Animations avancées (mouvement du `joueur`, changement de `texture`, etc.).
+- Animations avancées (mouvement du **`joueur`**, changement de **`texture`**, etc.).
 - Affichage du compteur de mouvements à l’écran.
 - Détection de collisions plus complexes ou introduction de mécanismes additionnels.
 
